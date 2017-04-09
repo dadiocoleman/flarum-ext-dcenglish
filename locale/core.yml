@@ -12,7 +12,6 @@ core:
       developer_text: "If you're a developer, you can <a>read the docs</a> and have a go at building your own extensions."
       install_text: "In the meantime, you can look for extensions at the <a>Flarum Community site</a> and install them manually using Composer."
       temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
-      title: Add Extension
 
     # These translations are used in the Appearance page.
     appearance:
@@ -45,7 +44,7 @@ core:
       saved_message: Your changes were saved.
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Welcome Banner
-      welcome_banner_text: Configure the text that displays in the banner on the All Discussions page. Use this to welcome guests to your forum.
+      welcome_banner_text: Configure the text that displays in the banner on the All Entries page. Use this to welcome guests to your forum.
 
     # These translations are used in the Dashboard page.
     dashboard:
@@ -133,8 +132,8 @@ core:
       allow_renaming_label: Allow renaming
       allow_post_editing_label: Allow post editing
       create_heading: Create
-      delete_discussions_forever_label: Delete discussions forever
-      delete_discussions_label: Delete discussions
+      delete_discussions_forever_label: Delete entries forever
+      delete_discussions_label: Delete entries
       delete_posts_forever_label: Delete posts forever
       edit_and_delete_posts_label: Edit and delete posts
       global_heading: Global
@@ -142,11 +141,11 @@ core:
       new_group_button: New Group
       participate_heading: Participate
       read_heading: Read
-      rename_discussions_label: Rename discussions
-      reply_to_discussions_label: Reply to discussions
+      rename_discussions_label: Rename entries
+      reply_to_discussions_label: Comment on entries
       sign_up_label: Sign up
-      start_discussions_label: Start discussions
-      view_discussions_label: View discussions
+      start_discussions_label: Start entries
+      view_discussions_label: View entries
       view_post_ips_label: View post IP addresses
 
     # These translations are used in the dropdown menus on the Permissions page.
@@ -154,7 +153,7 @@ core:
       allow_indefinitely_button: Indefinitely
       allow_some_minutes_button: "For {count} minute|For {count} minutes"
       allow_ten_minutes_button: For 10 minutes
-      allow_until_reply_button: Until next reply
+      allow_until_reply_button: Until next comment
       everyone_button: Everyone
       members_button: => core.group.members
       signup_closed_button: Closed
@@ -197,10 +196,10 @@ core:
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
       body_placeholder: Write a Post...
-      discard_confirmation: "You have not posted your discussion. Do you wish to discard it?"
-      submit_button: Post Discussion
+      discard_confirmation: "You have not posted your entries. Do you wish to discard it?"
+      submit_button: Publish
       title: => core.ref.start_a_discussion
-      title_placeholder: Discussion Title
+      title_placeholder: Entry Title
 
     # These translations are used by the composer when editing a post.
     composer_edit:
@@ -211,26 +210,27 @@ core:
     # These translations are used by the composer when replying to a discussion.
     composer_reply:
       body_placeholder: => core.ref.write_a_reply
-      discard_confirmation: "You have not posted your reply. Do you wish to discard it?"
-      posted_message: Your reply was posted.
-      submit_button: Post Reply
+      discard_confirmation: "You have not posted your comment. Do you wish to discard it?"
+      posted_message: Your comment was posted.
+      submit_button: Post Comment
       view_button: View
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      cannot_reply_button: Can't Reply
-      cannot_reply_text: You don't have permission to reply to this discussion.
+      cannot_reply_button: Can't Comment
+      cannot_reply_text: You don't have permission to comment on this entry.
       delete_button: => core.ref.delete
-      delete_confirmation: "Are you sure you want to delete this discussion?"
+      delete_confirmation: "Are you sure you want to delete this entry?"
       delete_forever_button: => core.ref.delete_forever
-      log_in_to_reply_button: Log In to Reply
-      rename_button: => core.ref.rename
+      log_in_to_reply_button: Log In to Comment
+      rename_button: Rename
+      rename_text: "Enter a new title for this entry:"
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
     # These translations are used in the discussion list.
     discussion_list:
-      empty_text: It looks like there are no discussions here.
+      empty_text: It looks like there are no entries here.
       load_more_button: => core.ref.load_more
       mark_as_read_tooltip: Mark as Read
       replied_text: "{username} replied {ago}"
@@ -238,16 +238,10 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
-      activate_button: Activate User
-      email_heading: => core.ref.email
       email_label: => core.ref.email
-      groups_heading: Groups
-      password_heading: => core.ref.password
       password_label: => core.ref.password
-      set_password_label: Set new password
       submit_button: => core.ref.save_changes
       title: Edit User
-      username_heading: => core.ref.username
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -266,33 +260,32 @@ core:
       log_in_link: => core.ref.log_in
       log_out_button: => core.ref.log_out
       profile_button: Profile
-      search_placeholder: Search Forum
+      search_placeholder: Search...
       settings_button: => core.ref.settings
       sign_up_link: => core.ref.sign_up
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
       all_discussions_link: => core.ref.all_discussions
-      cannot_start_discussion_button: Can't Start Discussion
-      mark_all_as_read_confirmation: "Are you sure you want to mark all discussions as read?"
+      cannot_start_discussion_button: Can't Create New Entry
+      mark_all_as_read_confirmation: "Are you sure you want to mark all entries as read?"
       mark_all_as_read_tooltip: => core.ref.mark_all_as_read
       refresh_tooltip: Refresh
       start_discussion_button: => core.ref.start_a_discussion
 
     # These translations are used by the sorting control above the discussion list.
     index_sort:
-      latest_button: Latest
-      newest_button: Newest
+      latest_button: Edited
+      newest_button: Latest
       oldest_button: Oldest
       relevance_button: Relevance
-      top_button: Top
+      top_button: Popular
 
     # These translations are used in the Log In modal dialog.
     log_in:
       forgot_password_link: "Forgot password?"
       invalid_login_message: Your login details were incorrect.
       password_placeholder: => core.ref.password
-      remember_me_label: Remember me for two weeks
       sign_up_text: "Don't have an account? <a>Sign Up</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -322,9 +315,9 @@ core:
     # These translations are used in the scrubber to the right of the post stream.
     post_scrubber:
       now_link: Now
-      original_post_link: Original Post
-      unread_text: "{count} unread"
-      viewing_text: "{index} of {count} post|{index} of {count} posts"
+      original_post_link: Original Entry
+      unread_text: "{count} unread comments"
+      viewing_text: "{index} of {count} comments|{index} of {count} comments"
 
     # These translations are displayed between posts in the post stream.
     post_stream:
@@ -334,14 +327,9 @@ core:
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} later"
 
-    # These translations are used by the rename discussion modal.
-    rename_discussion:
-      title: Enter a new title for this discussion
-      submit_button: => core.ref.rename
-
     # These translations are used by the search results dropdown list.
     search:
-      all_discussions_button: 'Search all discussions for "{query}"'
+      all_discussions_button: 'Search all entries for "{query}"'
       discussions_heading: => core.ref.discussions
       users_heading: Users
 
@@ -353,7 +341,7 @@ core:
       notifications_heading: => core.ref.notifications
       notify_by_email_heading: => core.ref.email
       notify_by_web_heading: Web
-      notify_discussion_renamed_label: Someone renames a discussion I started
+      notify_discussion_renamed_label: Someone renames a entry I wrote
       privacy_disclose_online_label: Allow others to see when I am online
       privacy_heading: Privacy
       title: => core.ref.settings
@@ -451,10 +439,6 @@ core:
       submit_button: Reset Password
       title: => core.ref.reset_your_password
 
-  # Translations in this namespace are used in messages output by the API.
-  api:
-    invalid_username_message: "The username may only contain letters, numbers, and dashes."
-
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
@@ -503,14 +487,14 @@ core:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    all_discussions: All Discussions
+    all_discussions: All Entries
     change_email: Change Email
     change_password: Change Password
     confirm_password: Confirm Password
     confirmation_email_sent: "We've sent a confirmation email to {email}. If it doesn't arrive soon, check your spam folder."
     delete: Delete
     delete_forever: Delete Forever
-    discussions: Discussions
+    discussions: Entries
     edit: Edit
     email: Email
     load_more: Load More
@@ -521,17 +505,16 @@ core:
     notifications: Notifications
     okay: OK                                     # Referenced by flarum-tags.yml
     password: Password
-    rename: Rename
-    reply: Reply                                 # Referenced by flarum-mentions.yml
+    reply: Comment                                 # Referenced by flarum-mentions.yml
     reset_your_password: Reset Your Password
     restore: Restore
     save_changes: Save Changes                   # Referenced by flarum-suspend.yml, flarum-tags.yml
     settings: Settings
     sign_up: Sign Up
     some_others: "{count} other|{count} others"  # Referenced by flarum-likes.yml, flarum-mentions.yml
-    start_a_discussion: Start a Discussion
+    start_a_discussion: New Entry
     username: Username
-    write_a_reply: Write a Reply...
+    write_a_reply: Leave a Comment...
     you: You                                     # Referenced by flarum-likes.yml, flarum-mentions.yml
 
   ##
