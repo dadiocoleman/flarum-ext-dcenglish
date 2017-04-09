@@ -1,7 +1,7 @@
 {
-    "name": "flarum/flarum-ext-english",
+    "name": "dadiocoleman/flarum-ext-dcenglish",
     "type": "flarum-extension",
-    "description": "English language pack.",
+    "description": "English language pack (changed strings).",
     "keywords": ["locale"],
     "license": "MIT",
     "require": {
@@ -12,10 +12,10 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "English",
+            "title": "English (changed strings)",
             "icon": {
-                "image": "icon.svg",
-                "backgroundColor": "#00247d",
+                "image": "dcicon.png",
+                "backgroundColor": "#000000",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
