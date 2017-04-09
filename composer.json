@@ -1,5 +1,5 @@
 {
-    "name": "dadiocoleman/flarum-ext-dcenglish",
+    "name": "dadiocoleman/flarum-ext-dadiocoleman",
     "type": "flarum-extension",
     "description": "English language pack (changed strings).",
     "keywords": ["locale"],
